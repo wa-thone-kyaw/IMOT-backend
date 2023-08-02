@@ -33,7 +33,7 @@ router
   .get("/", async function (req, res) {
     try {
       // const filename = req.params.filename;
-      // const filePath = path.join(__dirname, filename);
+      //const filePath = path.join(__dirname, filename);
       const foundInformations = await Information.find();
       res.send(foundInformations);
       //res.sendFile(filePath);

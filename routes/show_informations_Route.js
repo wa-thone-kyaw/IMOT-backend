@@ -1,8 +1,9 @@
 const express = require("express");
 const router = express.Router();
-
+const bodyParser = require("body-parser");
 const InformationData = require("../mongoSchema/imotDataSchema");
-
+// router.use(express.json());
+// router.use(bodyParser.json());
 router
   .get("/", async function (req, res) {
     try {
@@ -140,6 +141,7 @@ router
       dept_action_taken_fact: req.body.dept_action_taken_fact,
       //dept_action_taken: req.body.dept_action_taken,
       dept_punishment: req.body.dept_punishment,
+      dept_action_taken_note: req.body.dept_action_taken_note,
       //
       court_time: req.body.court_time,
       court_fact: req.body.court_fact,
@@ -192,6 +194,7 @@ router
     });
     try {
       await information.save();
+      console.log("Request body:", req.body);
       res.status(200).json({
         message: "Successfully add a new Information...",
       });
