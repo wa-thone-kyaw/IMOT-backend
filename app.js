@@ -23,6 +23,7 @@ const viewPhotoRoute = require("./routes/view_photo_Route");
 const person_detail_Route = require("./routes/personal_detail_Route");
 
 const informationDataRoute = require("./routes/show_informations_Route");
+const personal_Route = require("./routes/personal_Route");
 
 //import MongoSchema
 const Information = require("./mongoSchema/imotSchema");
@@ -48,7 +49,8 @@ mongoose.connect(
 app.use("/api-test/test", testRoutes);
 app.use("/api-test/informations", informationsRoute);
 app.use("/api-test/last-informations", last_informationRoute);
-app.use("/api-test/personal-detail/:title", person_detail_Route);
+app.use("/api-test/personal-detail/:name", person_detail_Route);
+app.use("/api-test/personal-id/:_id", personal_Route);
 app.use("/api/informations", informationDataRoute);
 
 //view photo
