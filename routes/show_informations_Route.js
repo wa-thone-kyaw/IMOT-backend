@@ -48,6 +48,7 @@ router
       school_attended: req.body.school_attended,
       from_years: req.body.from_years,
       finished_years: req.body.finished_years,
+      type_of_school: req.body.type_of_school,
       school_location: req.body.school_location,
       school_level: req.body.school_level,
       from_year_abroad: req.body.from_year_abroad,
@@ -55,7 +56,7 @@ router
       countries_visited: req.body.countries_visited,
       matter_of_visiting: req.body.matter_of_visiting,
       deposit_exchange: req.body.deposit_exchange,
-      father_name: req.body.father_name,
+
       father_relative_name: req.body.father_relative_name,
       father_relativeness: req.body.father_relativeness,
       father_relativeness_gender: req.body.father_relativeness_gender,
@@ -64,7 +65,7 @@ router
       father_relativeness_location: req.body.father_relativeness_location,
       father_relativeness_note: req.body.father_relativeness_note,
       //mother
-      mother_name: req.body.mother_name,
+
       mother_relative_name: req.body.mother_relative_name,
       mother_relativeness: req.body.mother_relativeness,
       mother_relativeness_gender: req.body.mother_relativeness_gender,
@@ -118,7 +119,7 @@ router
 
       //son and daughter
       child_name_t: req.body.child_name_t,
-      child_relative_name: req.body.child_relative_name,
+      child_relative_name_n: req.body.child_relative_name_n,
       child_relativeness: req.body.child_relativeness,
       child_relativeness_gender: req.body.child_relativeness_gender,
       child_relativeness_citizen: req.body.child_relativeness_citizen,
@@ -156,12 +157,14 @@ router
       go_abroad: req.body.go_abroad,
       reason_go_abroad: req.body.reason_go_abroad,
       abroad_country: req.body.abroad_country,
+      time_abroad: req.body.time_abroad,
       arrive_time_abroad: req.body.arrive_time_abroad,
       what_gov_abroad: req.body.what_gov_abroad,
       dept_when_arr_from_abroad: req.body.dept_when_arr_from_abroad,
       need_to_go_abroad: req.body.need_to_go_abroad,
       credentials_for_abroad: req.body.credentials_for_abroad,
       //
+      submit_person_date: req.body.submit_person_date,
       submit_person_ticket: req.body.submit_person_ticket,
       submit_person_name: req.body.submit_person_name,
       submit_person_position: req.body.submit_person_position,

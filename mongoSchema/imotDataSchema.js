@@ -29,6 +29,7 @@ const ImotDataSchema = {
   school_attended: String,
   from_years: String,
   finished_years: String,
+  type_of_school: String,
   school_location: String,
   school_level: String,
   from_year_abroad: String,
@@ -36,7 +37,7 @@ const ImotDataSchema = {
   countries_visited: String,
   matter_of_visiting: String,
   deposit_exchange: String,
-  father_name: String,
+
   father_relative_name: String,
   father_relativeness: String,
   father_relativeness_gender: String,
@@ -45,7 +46,7 @@ const ImotDataSchema = {
   father_relativeness_location: String,
   father_relativeness_note: String,
   //mother
-  mother_name: String,
+
   mother_relative_name: String,
   mother_relativeness: String,
   mother_relativeness_gender: String,
@@ -111,6 +112,7 @@ const ImotDataSchema = {
   dept_action_taken_fact: String,
   dept_action_taken: String,
   dept_punishment: String,
+  dept_action_taken_note: String,
   // //
   court_time: String,
   court_fact: String,
@@ -124,12 +126,14 @@ const ImotDataSchema = {
   go_abroad: String,
   reason_go_abroad: String,
   abroad_country: String,
+  time_abroad: String,
   arrive_time_abroad: String,
   what_gov_abroad: String,
   dept_when_arr_from_abroad: String,
   need_to_go_abroad: String,
   credentials_for_abroad: String,
   // //
+  submit_person_date: String,
   submit_person_ticket: String,
   submit_person_name: String,
   submit_person_position: String,
